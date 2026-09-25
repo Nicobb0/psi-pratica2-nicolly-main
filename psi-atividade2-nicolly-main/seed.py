@@ -10,8 +10,7 @@ def popular_banco(session):
             autor1 = Autor(nome="Ali Hazelwood", pais="Italia")
             autor2 = Autor(nome="Nicholas Sparks", pais="Americano")
             autor3 = Autor(nome="Machado de Assis", pais="Brasil")
-            autor4 = Autor(nome="Manuel Bandeira", pais="Brasil")
-            session.add_all([autor1, autor2, autor3, autor4])
+            session.add_all([autor1, autor2, autor3])
 
             livro1 = Livro(titulo="A Hipótese do Amor", ano=2021, autor_id=1)
             livro2 = Livro(titulo="A razão do amor", ano=2022, autor_id=1)
